@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Passengers</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Passengers</h1>
+  <span><a href="index.html">Home</a> | <a href="airports.html">Airports</a> | <a href="flights.html">Flights</a> | <a
+      href="planes.html">Planes</a> | <a href="plane_types.html">Plane Types</a> | <a
+      href="passengers.html">Passengers</a> | <a href="passenger_flights.html">Passenger Flights</a> </span>
+
+  <div id="browse" style="display: block">
+    <p><strong>Browse Passengers</strong></p>
+    <table border="1" cellpadding="5">
+      <tr>
+        <th><a href="#">New</a></th>
+        <th></th>
+        <th>passenger_id</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>phone</th>
+        <th>email</th>
+        <th>address</th>
+        <th>city</th>
+        <th>state</th>
+        <th>zip_code</th>
+        <th>passport_number</th>
+      </tr>
+      <tr>
+        <td><a href="#">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+        <td>1</td>
+        <td>Paul</td>
+        <td>Nguyen</td>
+        <td>111-222-3333</td>
+        <td>paul@oregonstate.edu</td>
+        <td>1111 Oregon St</td>
+        <td>Corvallis</td>
+        <td>OR</td>
+        <td>97330</td>
+        <td>A11222333</td>
+      </tr>
+      <tr>
+        <td><a href="#">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+        <td>2</td>
+        <td>Matt</td>
+        <td>Anderson</td>
+        <td>222-333-4444</td>
+        <td>matt@oregonstate.edu</td>
+        <td>2222 Washington St</td>
+        <td>Spokane</td>
+        <td>WA</td>
+        <td>99201</td>
+        <td>B22333444</td>
+      </tr>
+      <tr>
+        <td><a href="#">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+        <td>3</td>
+        <td>Steve</td>
+        <td>Rogers</td>
+        <td>832-424-8060</td>
+        <td>steve@marvel.com</td>
+        <td>14520 Walt St</td>
+        <td>Orlando</td>
+        <td>FL</td>
+        <td>32789</td>
+        <td>C334445555</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+  </div> <!-- browse -->
+
+  <div id="insert" style="display: block">
+    <form id="addPassenger" method="post">
+      <legend><strong>Add Passenger</strong></legend>
+      <fieldset class="fields">
+        <label>first_name</label> <input type="text" name="first_name">
+        <label>last_name</label> <input type="text" name="last_name">
+        <label>phone</label> <input type="tel" name="phone">
+        <label>email</label> <input type="email" name="email">
+        <label>address</label> <input type="text" name="address">
+        <label>city</label> <input type="text" name="city">
+        <label>state</label> <input type="text" name="state">
+        <label>zip_code</label> <input type="number" name="zip_code">
+        <label>passport_number</label> <input type="text" name="passport_number">
+      </fieldset>
+      <input class="btn" type="submit" value="Add Passenger">
+      <input class="btn" type="button" value="Cancel">
+    </form>
+  </div><!-- insert -->
+
+  <div id="update" style="display: block">
+    <form id="updatePassenger" method="post">
+      <legend><strong>Update Passenger</strong></legend>
+      <fieldset class="fields">
+        <label>passenger_id:</label> 1
+        <label>first_name</label> <input type="text" value="Paul" name="first_name">
+        <label>last_name</label> <input type="text" value="Nguyen" name="last_name">
+        <label>phone</label> <input type="tel" value="111-222-3333" name="phone">
+        <label>email</label> <input type="email" value="paul@oregonstate.edu" name="email">
+        <label>address</label> <input type="text" value="1111 Oregon St" name="address">
+        <label>city</label> <input type="text" value="Corvallis" name="city">
+        <label>state</label> <input type="text" value="OR" name="state">
+        <label>zip_code</label> <input type="number" value="97330" name="zip_code">
+        <label>passport_number</label> <input type="text" value="A11222333" name="passport_number">
+      </fieldset>
+      <input class="btn" type="submit" value="Save Update Passenger">
+      <input class="btn" type="button" value="Cancel">
+    </form>
+  </div><!-- update -->
+
+  <div id="delete" style="display: block">
+    <form id="deletePassenger" method="post">
+      <legend><strong>Delete Passenger</strong></legend>
+      <fieldset class="fields">
+        <p>Are you sure you wish to delete the following?</p>
+        <label>passenger_id:</label> 1
+        <label>first_name</label> Paul
+        <label>last_name</label> Nguyen
+        <label>phone</label> 111-222-3333
+        <label>email</label> paul@oregonstate.edu
+      </fieldset>
+      <input class="btn" type="submit" value="Delete Passenger">
+      <input class="btn" type="button" value="Cancel">
+    </form>
+  </div><!-- delete -->
+
+</body>
+
+</html>

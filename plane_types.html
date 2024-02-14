@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plane Types</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Plane Types</h1>
+    <span><a href="index.html">Home</a> | <a href="airports.html">Airports</a> | <a href="flights.html">Flights</a> | <a
+            href="planes.html">Planes</a> | <a href="plane_types.html">Plane Types</a> | <a
+            href="passengers.html">Passengers</a> | <a href="passenger_flights.html">Passenger Flights</a> </span>
+
+    <div id="browse" style="display: block">
+        <p><strong>Browse Plane Types</strong></p>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><a href="#">New</a></th>
+                <th></th>
+                <th>plane_type_id</th>
+                <th>type_name</th>
+                <th>capacity</th>
+                <th>range_in_hrs</th>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>1</td>
+                <td>Airbus A320-200</td>
+                <td>180</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>2</td>
+                <td>Boeing B737-800</td>
+                <td>190</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>3</td>
+                <td>Embraer 135</td>
+                <td>37</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+    </div> <!-- browse -->
+
+    <div id="insert" style="display: block">
+        <form id="addPlaneType" method="post">
+            <legend><strong>Add Plane Type</strong></legend>
+            <fieldset class="fields">
+                <label>plane_type_id</label> <input type="number" name="plane_type_id">
+                <label>type_name</label> <input type="text" name="type_name">
+                <label>capacity</label> <input type="number" name="capacity">
+                <label>range_in_hrs</label> <input type="number" name="range_in_hrs">
+            </fieldset>
+            <input class="btn" type="submit" value="Add Plane Type">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- insert -->
+
+    <div id="update" style="display: block">
+        <form id="updatePlaneType" method="post">
+            <legend><strong>Update Plane Type</strong></legend>
+            <fieldset class="fields">
+                <label>plane_type_id:</label> 1
+                <label>type_name</label> <input type="text" value="Airbus A320-200" name="type_name">
+                <label>capacity</label> <input type="number" name="capacity" value="180">
+                <label>range_in_hrs</label> <input type="number" name="range_in_hrs" value="5">
+            </fieldset>
+            <input class="btn" type="submit" value="Save Update Plane Type">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- update -->
+
+    <div id="delete" style="display: block">
+        <form id="deletePlaneType" method="post">
+            <legend><strong>Delete Plane Type</strong></legend>
+            <fieldset class="fields">
+                <p>Are you sure you wish to delete the following?</p>
+                <label>plane_type_id:</label> 1
+                <label>type_name</label> Airbus A320-200
+            </fieldset>
+            <input class="btn" type="submit" value="Delete Plane Type">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- delete -->
+
+</body>
+
+</html>

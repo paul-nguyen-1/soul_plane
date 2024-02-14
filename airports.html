@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Airports</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Airports</h1>
+  <span><a href="index.html">Home</a> | <a href="airports.html">Airports</a> | <a href="flights.html">Flights</a> | <a
+      href="planes.html">Planes</a> | <a href="plane_types.html">Plane Types</a> | <a
+      href="passengers.html">Passengers</a> | <a href="passenger_flights.html">Passenger Flights</a> </span>
+
+  <div id="browse" style="display: block">
+    <p><strong>Browse Airports</strong></p>
+    <table border="1" cellpadding="5">
+      <tr>
+        <th><a href="#">New</a></th>
+        <th><a href="#"></a></th>
+        <th>airport_id</th>
+        <th>airport_name</th>
+        <th>airport_code</th>
+        <th>location</th>
+      </tr>
+      <tr>
+        <td><a href="#">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+        <td>1</td>
+        <td>Portland International Airport</td>
+        <td>PDX</td>
+        <td>Portland, OR</td>
+      </tr>
+      <tr>
+        <td><a href="#">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+        <td>2</td>
+        <td>Seattle-Tacoma International Airport</td>
+        <td>SEA</td>
+        <td>SeaTac, WA</td>
+      </tr>
+      <tr>
+        <td><a href="#">Edit</a></td>
+        <td><a href="#">Delete</a></td>
+        <td>3</td>
+        <td>Spokane International Airport</td>
+        <td>GEG</td>
+        <td>Spokane, WA</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+  </div> <!-- browse -->
+
+  <div id="insert" style="display: block">
+    <form id="addAirport" method="post">
+      <legend><strong>Add Airport</strong></legend>
+      <fieldset class="fields">
+        <label>airport_id:</label> <input type="number" name="airport_id">
+        <label>airport_name</label> <input type="text" name="airport_name">
+        <label>airport_code</label> <input type="text" name="airport_code">
+        <label>location</label> <input type="text" name="location">
+      </fieldset>
+      <input class="btn" type="submit" value="Add Airport">
+      <input class="btn" type="button" value="Cancel">
+    </form>
+  </div><!-- insert -->
+
+  <div id="update" style="display: block">
+    <form id="updateAirport" method="post">
+      <legend><strong>Update Airport</strong></legend>
+      <fieldset class="fields">
+        <label>airport_id:</label> 1
+        <label>airport_name</label> <input type="text" value="Portland International Airport" name="airport_name">
+        <label>airport_code</label> <input type="text" name="airport_code" value="PDX">
+        <label>location</label> <input type="text" name="location" value="Portland, OR">
+      </fieldset>
+      <input class="btn" type="submit" value="Save Update Airport">
+      <input class="btn" type="button" value="Cancel">
+    </form>
+  </div><!-- update -->
+
+  <div id="delete" style="display: block">
+    <form id="deleteAirport" method="post">
+      <legend><strong>Delete Airport</strong></legend>
+      <fieldset class="fields">
+        <p>Are you sure you wish to delete the following?</p>
+        <label>airport_id:</label> 1
+        <label>airport_name:</label> Portland International Airport
+      </fieldset>
+      <input class="btn" type="submit" value="Delete Airport">
+      <input class="btn" type="button" value="Cancel">
+    </form>
+  </div><!-- delete -->
+
+</body>
+
+</html>

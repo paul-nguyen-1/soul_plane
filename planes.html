@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Planes</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Planes</h1>
+    <span><a href="index.html">Home</a> | <a href="airports.html">Airports</a> | <a href="flights.html">Flights</a> | <a
+            href="planes.html">Planes</a> | <a href="plane_types.html">Plane Types</a> | <a
+            href="passengers.html">Passengers</a> | <a href="passenger_flights.html">Passenger Flights</a> </span>
+
+    <div id="browse" style="display: block">
+        <p><strong>Browse Planes</strong></p>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><a href="#">New</a></th>
+                <th></th>
+                <th>plane_id</th>
+                <th>current_airport_id</th>
+                <th>plane_type_id</th>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>3</td>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+    </div> <!-- browse -->
+
+    <div id="insert" style="display: block">
+        <form id="addPlane" method="post">
+            <legend><strong>Add Plane</strong></legend>
+            <fieldset class="fields">
+                <label>plane_id</label> <input type="number" name="plane_id">
+                <label>current_airport_id</label> <input type="number" name="current_airport_id">
+                <label>plane_type_id</label> <input type="number" name="plane_type_id">
+            </fieldset>
+            <input class="btn" type="submit" value="Add Plane">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- insert -->
+
+    <div id="update" style="display: block">
+        <form id="updatePlane" method="post">
+            <legend><strong>Update Plane</strong></legend>
+            <fieldset class="fields">
+                <label>plane_id:</label> 1
+                <label>current_airport_id</label> <input type="number" value="2" name="current_airport_id">
+                <label>plane_type_id</label> <input type="number" name="plane_type_id" value="2">
+            </fieldset>
+            <input class="btn" type="submit" value="Save Update Plane">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- update -->
+
+    <div id="delete" style="display: block">
+        <form id="deletePlane" method="post">
+            <legend><strong>Delete Plane</strong></legend>
+            <fieldset class="fields">
+                <p>Are you sure you wish to delete the following?</p>
+                <label>plane_id:</label> 1
+                <label>current_airport_id</label> 2
+                <label>plane_type_id</label> 2
+            </fieldset>
+            <input class="btn" type="submit" value="Delete Plane">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- delete -->
+
+</body>
+
+</html>
