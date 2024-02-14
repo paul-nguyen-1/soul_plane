@@ -64,9 +64,25 @@
       <legend><strong>Add Flight</strong></legend>
       <fieldset class="fields">
         <label>flights_id</label> <input type="number" name="flights_id">
-        <label>depart_airport_id</label> <input type="number" name="depart_airport_id">
-        <label>arrive_airport_id</label> <input type="number" name="arrive_airport_id">
-        <label>plane_id</label> <input type="number" name="plane_id">
+        <label>depart_airport_id</label> 
+        <select name="depart_airport_id">
+          <option value="1">Portland International Airport</option>
+          <option value="2">Seattle-Tacoma International</option>
+          <option value="3">Spokane International Airport</option>
+        </select>
+        <label>arrive_airport_id</label> 
+        <select name="arrive_airport_id">
+          <option value="1">Portland International Airport</option>
+          <option value="2">Seattle-Tacoma International</option>
+          <option value="3">Spokane International Airport</option>
+        </select>
+        <label>plane_id</label> 
+        <select name="plane_id">
+          <option value="1">Plane #1 (Airbus A320-200)</option>
+          <option value="2">Plane #2 (Boeing B737-800)</option>
+          <option value="3">Plane #3 (Embraer 135)</option>
+          <option value="4">Plane $4 (Embraer 135)</option>
+        </select>
         <label>depart_time</label> <input type="datetime-local" name="depart_time">
         <label>arrive_time</label> <input type="datetime-local" name="arrive_time">
       </fieldset>
@@ -80,9 +96,25 @@
       <legend><strong>Update Flight</strong></legend>
       <fieldset class="fields">
         <label>flights_id:</label> 1
-        <label>depart_airport_id</label> <input type="number" value="1" name="depart_airport_id">
-        <label>arrive_airport_id</label> <input type="number" value="2" name="arrive_airport_id">
+        <label>depart_airport_id</label>
+        <select name="depart_airport_id">
+          <option value="1">Portland International Airport</option>
+          <option value="2">Seattle-Tacoma International</option>
+          <option value="3">Spokane International Airport</option>
+        </select>
+        <label>arrive_airport_id</label> 
+        <select name="depart_airport_id">
+          <option value="1">Portland International Airport</option>
+          <option value="2">Seattle-Tacoma International</option>
+          <option value="3">Spokane International Airport</option>
+        </select>
         <label>plane_id</label> <input type="number" value="3" name="plane_id">
+        <select name="plane_id">
+          <option value="1">Plane #1 (Airbus A320-200)</option>
+          <option value="2">Plane #2 (Boeing B737-800)</option>
+          <option value="3">Plane #3 (Embraer 135)</option>
+          <option value="4">Plane $4 (Embraer 135)</option>
+        </select>
         <label>depart_time</label> <input type="datetime-local" value="February 5, 2024, at 14:30:00" name="depart_time">
         <label>arrive_time</label> <input type="datetime-local" value="February 11, 2024, at 02:15:00" name="arrive_time">
       </fieldset>
