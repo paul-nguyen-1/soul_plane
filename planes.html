@@ -63,8 +63,20 @@
         <form id="updatePlane" method="post">
             <legend><strong>Update Plane</strong></legend>
             <fieldset class="fields">
-                <label>current_airport_id</label> <input type="number" value="2" name="current_airport_id">
-                <label>plane_type_id</label> <input type="number" name="plane_type_id" value="2">
+                <label for="current_airport_id">Current Airport ID</label>
+                <select name="current_airport_id" id="current_airport_id">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="plane_type_id">Plane Type ID</label>
+                <select name="plane_type_id" id="plane_type_id">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
             </fieldset>
             <input class="btn" type="submit" value="Save Update Plane">
             <input class="btn" type="button" value="Cancel">
