@@ -47,16 +47,17 @@ CREATE TABLE Planes (
     plane_id INT PRIMARY KEY AUTO_INCREMENT,
     plane_type_id INT NOT NULL,
     current_airport_id INT,
-    FOREIGN KEY (plane_type_id) REFERENCES Plane_types(plane_type_id),
+    FOREIGN KEY (plane_type_id) REFERENCES Plane_types(plane_type_id)
+        ON DELETE RESTRICT,
     FOREIGN KEY (current_airport_id) REFERENCES Airports(airport_id)
-    ON UPDATE CASCADE
+    
 );
 
 -- Insert values into Planes table
 INSERT INTO Planes (current_airport_id, plane_type_id) VALUES
 (2, 2),
 (3, 1),
-(1, 3)
+(1, 3),
 (NULL, 3);
 
 -- Create Flights Table
@@ -69,9 +70,11 @@ CREATE TABLE Flights (
     depart_time DATETIME NOT NULL,
     arrive_time DATETIME NOT NULL,
     FOREIGN KEY (plane_id) REFERENCES Planes(plane_id),
-    FOREIGN KEY (depart_airport_id) REFERENCES Airports(airport_id),
+    FOREIGN KEY (depart_airport_id) REFERENCES Airports(airport_id)
+        ON DELETE CASCADE,
     FOREIGN KEY (arrive_airport_id) REFERENCES Airports(airport_id)
-    ON UPDATE CASCADE
+        ON DELETE CASCADE
+    
 );
 
 -- Insert values into Flights table
@@ -87,9 +90,10 @@ CREATE TABLE Passengers_flights (
     passenger_id INT NOT NULL,
     flight_id INT NOT NULL,
     PRIMARY KEY (passenger_id, flight_id),
-    FOREIGN KEY (passenger_id) REFERENCES Passengers(passenger_id),
+    FOREIGN KEY (passenger_id) REFERENCES Passengers(passenger_id)
+        ON DELETE CASCADE,
     FOREIGN KEY (flight_id) REFERENCES Flights(flight_id)
-    ON UPDATE CASCADE
+        ON DELETE CASCADE
 );
 
 -- Insert values into Passengers_flights table
