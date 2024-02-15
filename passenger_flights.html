@@ -47,8 +47,18 @@
         <form id="addPassengerFlight" method="post">
             <legend><strong>Add Passenger_Flight</strong></legend>
             <fieldset class="fields">
-                <label>flight_id</label> <input type="number" name="flight_id">
-                <label>passenger_id</label> <input type="number" name="passenger_id">
+                <label for="flight_id">Flight ID</label>
+                <select name="flight_id" id="flight_id">
+                    <option value="1">Portland International Airport</option>
+                    <option value="2">Seattle-Tacoma International</option>
+                    <option value="3">Spokane International Airport</option>
+                </select>
+                <label for="passenger_id">Passenger ID</label>
+                <select name="passenger_id" id="passenger_id">
+                    <option value="1">Paul</option>
+                    <option value="2">Matt</option>
+                    <option value="3">Steve</option>
+                </select>
             </fieldset>
             <input class="btn" type="submit" value="Add Passenger_Flight">
             <input class="btn" type="button" value="Cancel">
@@ -59,18 +69,17 @@
         <form id="updatePassengerFlight" method="post">
             <legend><strong>Update Passenger_Flight</strong></legend>
             <fieldset class="fields">
-                <label>ID:</label> 1
                 <label for="flight_id">Flight ID</label>
                 <select name="flight_id" id="flight_id">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="1">Portland International Airport</option>
+                    <option value="2">Seattle-Tacoma International</option>
+                    <option value="3">Spokane International Airport</option>
                 </select>
                 <label for="passenger_id">Passenger ID</label>
                 <select name="passenger_id" id="passenger_id">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="1">Paul</option>
+                    <option value="2">Matt</option>
+                    <option value="3">Steve</option>
                 </select>
             </fieldset>
             <input class="btn" type="submit" value="Save Update Passenger_Flight">
