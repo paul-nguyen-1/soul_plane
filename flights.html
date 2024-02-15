@@ -18,12 +18,12 @@
       <tr>
         <th><a href="#">New</a></th>
         <th></th>
-        <th>flights_id</th>
-        <th>depart_airport_id</th>
-        <th>arrive_airport_id</th>
-        <th>plane_id</th>
-        <th>depart_time</th>
-        <th>arrive_time</th>
+        <th>Flight ID</th>
+        <th>Departure Airport</th>
+        <th>Arrival Airport</th>
+        <th>Plane</th>
+        <th>Departure Time</th>
+        <th>Arrival Time</th>
       </tr>
       <tr>
         <td><a href="#">Edit</a></td>
@@ -63,28 +63,27 @@
     <form id="addFlight" method="post">
       <legend><strong>Add Flight</strong></legend>
       <fieldset class="fields">
-        <label>flights_id</label> <input type="number" name="flights_id">
-        <label>depart_airport_id</label> 
+        <label>Departure Airport</label> 
         <select name="depart_airport_id">
           <option value="1">Portland International Airport</option>
           <option value="2">Seattle-Tacoma International</option>
           <option value="3">Spokane International Airport</option>
         </select>
-        <label>arrive_airport_id</label> 
+        <label>Arrival Airport</label> 
         <select name="arrive_airport_id">
           <option value="1">Portland International Airport</option>
           <option value="2">Seattle-Tacoma International</option>
           <option value="3">Spokane International Airport</option>
         </select>
-        <label>plane_id</label> 
+        <label>Plane</label> 
         <select name="plane_id">
           <option value="1">Plane #1 (Airbus A320-200)</option>
           <option value="2">Plane #2 (Boeing B737-800)</option>
           <option value="3">Plane #3 (Embraer 135)</option>
           <option value="4">Plane $4 (Embraer 135)</option>
         </select>
-        <label>depart_time</label> <input type="datetime-local" name="depart_time">
-        <label>arrive_time</label> <input type="datetime-local" name="arrive_time">
+        <label>Departure Time</label> <input type="datetime-local" name="depart_time">
+        <label>Arrival Time</label> <input type="datetime-local" name="arrive_time">
       </fieldset>
       <input class="btn" type="submit" value="Add Flight">
       <input class="btn" type="button" value="Cancel">
@@ -95,28 +94,28 @@
     <form id="updateFlight" method="post">
       <legend><strong>Update Flight</strong></legend>
       <fieldset class="fields">
-        <label>flights_id:</label> 1
-        <label>depart_airport_id</label>
+        <label>Flight ID:</label> 1
+        <label>Departure Airport</label>
         <select name="depart_airport_id">
           <option value="1">Portland International Airport</option>
           <option value="2">Seattle-Tacoma International</option>
           <option value="3">Spokane International Airport</option>
         </select>
-        <label>arrive_airport_id</label> 
+        <label>Arrival Airport</label> 
         <select name="depart_airport_id">
           <option value="1">Portland International Airport</option>
           <option value="2">Seattle-Tacoma International</option>
           <option value="3">Spokane International Airport</option>
         </select>
-        <label>plane_id</label> <input type="number" value="3" name="plane_id">
+        <label>Plane</label>
         <select name="plane_id">
           <option value="1">Plane #1 (Airbus A320-200)</option>
           <option value="2">Plane #2 (Boeing B737-800)</option>
           <option value="3">Plane #3 (Embraer 135)</option>
           <option value="4">Plane $4 (Embraer 135)</option>
         </select>
-        <label>depart_time</label> <input type="datetime-local" value="February 5, 2024, at 14:30:00" name="depart_time">
-        <label>arrive_time</label> <input type="datetime-local" value="February 11, 2024, at 02:15:00" name="arrive_time">
+        <label>Departure Time</label> <input type="datetime-local" value="February 5, 2024, at 14:30:00" name="depart_time">
+        <label>Arrival Time</label> <input type="datetime-local" value="February 11, 2024, at 02:15:00" name="arrive_time">
       </fieldset>
       <input class="btn" type="submit" value="Save Update Flight">
       <input class="btn" type="button" value="Cancel">
@@ -128,12 +127,12 @@
       <legend><strong>Delete Flight</strong></legend>
       <fieldset class="fields">
         <p>Are you sure you wish to delete the following?</p>
-        <label>flights_id:</label> 1
-        <label>depart_airport_id</label> 1
-        <label>arrive_airport_id</label> 2
-        <label>plane_id</label> 3
-        <label>depart_time</label> February 5, 2024, at 14:30:00
-        <label>arrive_time</label> February 11, 2024, at 02:15:00
+        <label>Flight ID:</label> 1
+        <label>Departure Airport:</label> 1
+        <label>Arrival Airport:</label> 2
+        <label>Plane:</label> Plane #3 (Embraer 135)
+        <label>Depart Time:</label> February 5, 2024, at 14:30:00
+        <label>Arrival Time:</label> February 11, 2024, at 02:15:00
       </fieldset>
       <input class="btn" type="submit" value="Delete Flight">
       <input class="btn" type="button" value="Cancel">
