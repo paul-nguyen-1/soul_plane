@@ -51,8 +51,20 @@
         <form id="addPlane" method="post">
             <legend><strong>Add Plane</strong></legend>
             <fieldset class="fields">
-                <label>Current Airport</label> <input type="number" name="current_airport_id">
-                <label>Plane Type</label> <input type="number" name="plane_type_id">
+                <label>Current Airport</label> 
+                <select name="current_airport_id">
+                    <option value=""></option>
+                    <option value="1">Portland International Airport</option>
+                    <option value="2">Seattle-Tacoma International Airport</option>
+                    <option value="3">Spokane International Airport</option>
+                </select>
+                <label>Plane Type</label> 
+                <select name="plane_type_id">
+                    <option value="1">Airbus A320-200</option>
+                    <option value="2">Boeing B737-800</option>
+                    <option value="3">Embraer 135</option>
+                </select>
+                
             </fieldset>
             <input class="btn" type="submit" value="Add Plane">
             <input class="btn" type="button" value="Cancel">
@@ -65,17 +77,18 @@
             <fieldset class="fields">
                 <label>Plane ID:</label> 1
                 <label for="current_airport_id">Current Airport</label>
-                <select name="current_airport_id" id="current_airport_id">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <select name="current_airport_id">
+                    <option value=""></option>
+                    <option value="1">Portland International Airport</option>
+                    <option value="2">Seattle-Tacoma International Airport</option>
+                    <option value="3">Spokane International Airport</option>
                 </select>
 
                 <label for="plane_type_id">Plane Type</label>
-                <select name="plane_type_id" id="plane_type_id">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <select name="plane_type_id">
+                    <option value="1">Airbus A320-200</option>
+                    <option value="2">Boeing B737-800</option>
+                    <option value="3">Embraer 135</option>
                 </select>
 
             </fieldset>
