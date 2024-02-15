@@ -60,8 +60,18 @@
             <legend><strong>Update Passenger_Flight</strong></legend>
             <fieldset class="fields">
                 <label>ID:</label> 1
-                <label>flight_id</label> <input type="number" value="1" name="flight_id">
-                <label>passenger_id</label> <input type="number" value="2" name="passenger_id">
+                <label for="flight_id">Flight ID</label>
+                <select name="flight_id" id="flight_id">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="passenger_id">Passenger ID</label>
+                <select name="passenger_id" id="passenger_id">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
             </fieldset>
             <input class="btn" type="submit" value="Save Update Passenger_Flight">
             <input class="btn" type="button" value="Cancel">
