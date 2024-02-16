@@ -18,30 +18,30 @@
             <tr>
                 <th><a href="#">New</a></th>
                 <th></th>
-                <th>plane_id</th>
-                <th>current_airport_id</th>
-                <th>plane_type_id</th>
+                <th>Plane ID</th>
+                <th>Current Airport</th>
+                <th>Plane Type</th>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
                 <td>1</td>
-                <td>2</td>
-                <td>2</td>
+                <td>Spokane International Airport</td>
+                <td>Airbus A320-200</td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
                 <td>2</td>
-                <td>3</td>
-                <td>1</td>
+                <td>Seattle-Tacoma International Airport</td>
+                <td>Boeing B737-800</td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
                 <td>3</td>
-                <td>1</td>
-                <td>3</td>
+                <td>Portland International Airport</td>
+                <td>Embraer 135</td>
             </tr>
         </table>
         <p>&nbsp;</p>
@@ -51,8 +51,20 @@
         <form id="addPlane" method="post">
             <legend><strong>Add Plane</strong></legend>
             <fieldset class="fields">
-                <label>current_airport_id</label> <input type="number" name="current_airport_id">
-                <label>plane_type_id</label> <input type="number" name="plane_type_id">
+                <label>Current Airport</label> 
+                <select name="current_airport_id">
+                    <option value=""></option>
+                    <option value="1">Portland International Airport</option>
+                    <option value="2">Seattle-Tacoma International Airport</option>
+                    <option value="3">Spokane International Airport</option>
+                </select>
+                <label>Plane Type</label> 
+                <select name="plane_type_id">
+                    <option value="1">Airbus A320-200</option>
+                    <option value="2">Boeing B737-800</option>
+                    <option value="3">Embraer 135</option>
+                </select>
+                
             </fieldset>
             <input class="btn" type="submit" value="Add Plane">
             <input class="btn" type="button" value="Cancel">
@@ -63,18 +75,20 @@
         <form id="updatePlane" method="post">
             <legend><strong>Update Plane</strong></legend>
             <fieldset class="fields">
-                <label for="current_airport_id">Current Airport ID</label>
-                <select name="current_airport_id" id="current_airport_id">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <label>Plane ID:</label> 1
+                <label for="current_airport_id">Current Airport</label>
+                <select name="current_airport_id">
+                    <option value=""></option>
+                    <option value="1">Portland International Airport</option>
+                    <option value="2">Seattle-Tacoma International Airport</option>
+                    <option value="3">Spokane International Airport</option>
                 </select>
 
-                <label for="plane_type_id">Plane Type ID</label>
-                <select name="plane_type_id" id="plane_type_id">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
+                <label for="plane_type_id">Plane Type</label>
+                <select name="plane_type_id">
+                    <option value="1">Airbus A320-200</option>
+                    <option value="2">Boeing B737-800</option>
+                    <option value="3">Embraer 135</option>
                 </select>
 
             </fieldset>
@@ -88,9 +102,9 @@
             <legend><strong>Delete Plane</strong></legend>
             <fieldset class="fields">
                 <p>Are you sure you wish to delete the following?</p>
-                <label>plane_id:</label> 1
-                <label>current_airport_id</label> 2
-                <label>plane_type_id</label> 2
+                <label>Plane ID:</label> 1
+                <label>Current Airport:</label> 2
+                <label>Plane Type:</label> 2
             </fieldset>
             <input class="btn" type="submit" value="Delete Plane">
             <input class="btn" type="button" value="Cancel">
